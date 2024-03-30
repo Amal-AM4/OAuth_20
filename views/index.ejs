@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <nav>
+      <ul>
+        <% if (data) { %>
+          <li><a href="/auth/logout">Logout</a></li>
+        <% } else { %>
+          <li><a href="/auth/login">Login</a></li>
+        <% } %>
+          <li><a href="/">Home</a></li>
+          <li><a href="/profile">Profile</a></li>
+      </ul>
+    </nav>
+
+    <h1>NET Ninja OAuth Tut's</h1>
+    <h3>Home Page</h3>
+
+    <br>
+
+    <p>Probably the best OAuth tutorials on the planet :)</p>
+
+  </body>
+</html>
